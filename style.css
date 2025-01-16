@@ -1,0 +1,41 @@
+ul li {
+  list-style: none;
+}
+body {
+  margin: 0;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 64px 120px;
+  background-image: url(./image/Header-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+}
+.menu {
+  padding: 64px 120px;
+}
+.menu-logo-close {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.list-menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #292929;
+  gap: 32px;
+}
