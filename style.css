@@ -1,8 +1,27 @@
-ul li {
+html {
+  scroll-behavior: smooth;
+}
+ul,
+ol {
   list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 body {
+  font-family: "Inter", sans-serif;
   margin: 0;
+  color: #292929;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+section {
+  height: 800px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 .header__top {
   display: flex;
@@ -21,21 +40,92 @@ body {
   background-size: cover;
 }
 .menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms;
+  box-sizing: border-box;
+  height: 100vx;
+  background-color: #e8eff9;
   padding: 64px 120px;
+}
+.menu:target {
+  transform: translateX(-0%);
 }
 .menu-logo-close {
   display: flex;
   justify-content: space-between;
   margin-bottom: 64px;
 }
-.list-menu {
+.nav {
   display: flex;
   flex-direction: column;
+  gap: 32px;
+}
+.nav-link {
   font-weight: 700;
   font-size: 22px;
   line-height: 1;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #292929;
-  gap: 32px;
+}
+.main {
+  padding: 120px;
+}
+.header__title {
+  margin-top: 40px;
+  margin-bottom: 0;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.recommended__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.categories__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.how-to-buy__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.recommended__products {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.product__photo {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.recommended {
+  margin-bottom: 120px;
+}
+.product__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.product__categoria {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.product__price {
+  margin-top: 0;
+  font-weight: bold;
 }
